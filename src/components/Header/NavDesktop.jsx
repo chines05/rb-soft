@@ -1,9 +1,8 @@
 import { Link } from "react-scroll";
-import Button from "../ui/Button";
 
 export default function NavDesktop() {
   return (
-    <nav className="hidden md:flex items-center space-x-6">
+    <nav className="hidden md:flex items-center space-x-6 pr-10">
       <Link
         to="inicio"
         smooth={true}
@@ -44,7 +43,6 @@ export default function NavDesktop() {
       >
         Contato
       </Link>
-      <Button size="sm">Demonstração</Button>
     </nav>
   );
 }

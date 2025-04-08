@@ -1,17 +1,16 @@
 import { Link } from "react-scroll";
-import Button from "../ui/Button";
 
 export default function NavMobile({ isOpen, onClose }) {
   if (!isOpen) return null;
 
   return (
     <div className="md:hidden fixed inset-0 bg-white z-40 mt-16">
-      <div className="container mx-auto px-4 py-6 flex flex-col space-y-4">
+      <div className="bg-zinc-200 container mx-auto px-4 py-6 flex flex-col space-y-4">
         <Link
           to="inicio"
           smooth={true}
           duration={500}
-          className="text-lg font-medium hover:text-primary transition-colors py-2"
+          className="cursor-pointer text-lg font-medium hover:text-zinc-500 transition-colors py-2"
           onClick={onClose}
         >
           Início
@@ -20,7 +19,7 @@ export default function NavMobile({ isOpen, onClose }) {
           to="solucoes"
           smooth={true}
           duration={500}
-          className="text-lg font-medium hover:text-primary transition-colors py-2"
+          className="cursor-pointer text-lg font-medium hover:text-zinc-500 transition-colors py-2"
           onClick={onClose}
         >
           Soluções
@@ -29,7 +28,7 @@ export default function NavMobile({ isOpen, onClose }) {
           to="sobre"
           smooth={true}
           duration={500}
-          className="text-lg font-medium hover:text-primary transition-colors py-2"
+          className="cursor-pointer text-lg font-medium hover:text-zinc-500 transition-colors py-2"
           onClick={onClose}
         >
           Sobre Nós
@@ -38,7 +37,7 @@ export default function NavMobile({ isOpen, onClose }) {
           to="clientes"
           smooth={true}
           duration={500}
-          className="text-lg font-medium hover:text-primary transition-colors py-2"
+          className="cursor-pointer text-lg font-medium hover:text-zinc-500 transition-colors py-2"
           onClick={onClose}
         >
           Clientes
@@ -47,14 +46,11 @@ export default function NavMobile({ isOpen, onClose }) {
           to="contato"
           smooth={true}
           duration={500}
-          className="text-lg font-medium hover:text-primary transition-colors py-2"
+          className="cursor-pointer text-lg font-medium hover:text-zinc-500 transition-colors py-2"
           onClick={onClose}
         >
           Contato
         </Link>
-        <Button size="lg" className="w-full mt-4">
-          Demonstração
-        </Button>
       </div>
     </div>
   );

@@ -1,9 +1,10 @@
+import { handleWhatsAppClick } from "../../utils/handleWhatsAppClick";
 import Button from "../ui/Button";
 
 export default function CTASection() {
   return (
-    <section className="py-16 bg-primary text-white">
-      <div className="container mx-auto px-4 text-center">
+    <section className="py-16 bg-primary text-black">
+      <div className="container mx-auto px-4 text-center flex flex-col items-center">
         <h2 className="text-3xl font-bold mb-4">
           Pronto para transformar seu negócio?
         </h2>
@@ -11,8 +12,8 @@ export default function CTASection() {
           Entre em contato conosco hoje mesmo e descubra como nossas soluções de
           automação podem impulsionar seu negócio.
         </p>
-        <Button size="lg" variant="secondary">
-          Solicitar Demonstração
+        <Button size="lg" variant="whatsapp" onClick={handleWhatsAppClick}>
+          Automatize seu Negócio
         </Button>
       </div>
     </section>

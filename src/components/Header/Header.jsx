@@ -12,21 +12,12 @@ export default function Header() {
   return (
     <header className="fixed top-0 left-0 right-0 bg-white/90 backdrop-blur-sm z-50 border-b">
       <div className="container mx-auto px-4 py-3 flex items-center justify-between">
-        {/* Logo */}
         <div className="flex items-center">
-          <img
-            src={Logo}
-            alt="AutoTech Logo"
-            width={40}
-            height={40}
-            className="mr-2"
-          />
-          <span className="font-bold text-xl">AutoTech</span>
+          <img src={Logo} alt="AutoTech Logo" width={70} className="mx-10" />
         </div>
 
         <NavDesktop />
 
-        {/* Mobile Menu Button */}
         <Button
           variant="ghost"
           size="icon"

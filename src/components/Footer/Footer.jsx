@@ -45,15 +45,7 @@ export default function Footer() {
             ]}
           />
 
-          <FooterLinks
-            title="Suporte"
-            links={[
-              { text: "Ajuda" },
-              { text: "Documentação" },
-              { text: "Status do Sistema" },
-              { text: "Fale Conosco" },
-            ]}
-          />
+          <FooterLinks title="Suporte" links={[{ text: "Fale Conosco" }]} />
         </div>
       </div>
     </footer>
