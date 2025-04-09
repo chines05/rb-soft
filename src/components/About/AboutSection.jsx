@@ -6,7 +6,7 @@ export default function AboutSection() {
       <div className="container mx-auto px-10">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div>
-            <h2 className="text-3xl font-bold mb-4">Sobre a AutoTech</h2>
+            <h2 className="text-3xl font-bold mb-4">Sobre a Rb Soft</h2>
             <p className="text-muted-foreground mb-6">
               Há mais de 10 anos no mercado, a AutoTech é especialista em
               soluções de automação comercial para empresas de todos os portes.

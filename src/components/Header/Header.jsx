@@ -1,10 +1,10 @@
 import { useState } from "react";
-import { Menu, X } from "lucide-react";
 import Logo from "../../assets/imgs/IconeRbSoft.png";
 
 import Button from "../ui/Button";
 import NavDesktop from "./NavDesktop";
 import NavMobile from "./NavMobile";
+import { IoClose, IoMenu } from "react-icons/io5";
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -29,9 +29,9 @@ export default function Header() {
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
         >
           {mobileMenuOpen ? (
-            <X className="h-6 w-6" />
+            <IoClose className="h-6 w-6 text-white" />
           ) : (
-            <Menu className="h-6 w-6" />
+            <IoMenu className="h-6 w-6 text-white" />
           )}
         </Button>
       </div>

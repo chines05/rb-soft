@@ -17,7 +17,7 @@ export default function NavDesktop() {
         duration={500}
         className="text-md font-medium hover:text-primary transition-colors cursor-pointer"
       >
-        Serviços
+        Soluções
       </Link>
       <Link
         to="sobre"
@@ -34,6 +34,14 @@ export default function NavDesktop() {
         className="text-md font-medium hover:text-primary transition-colors cursor-pointer"
       >
         Clientes
+      </Link>
+      <Link
+        to="parcerias"
+        smooth={true}
+        duration={500}
+        className="text-md font-medium hover:text-primary transition-colors cursor-pointer"
+      >
+        Parcerias
       </Link>
     </nav>
   );

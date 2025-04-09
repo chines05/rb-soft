@@ -14,7 +14,7 @@ export default function FooterLinks({ title, links }) {
                   ? "text-[#25D366] hover:text-[#4aff74]"
                   : "text-gray-400 hover:text-white"
               }`}
-              onClick={handleWhatsAppClick}
+              onClick={link.text === "Fale Conosco" && handleWhatsAppClick}
             >
               {link.text}
             </a>
