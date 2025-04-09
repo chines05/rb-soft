@@ -2,12 +2,12 @@ import { Link } from "react-scroll";
 
 export default function NavDesktop() {
   return (
-    <nav className="hidden md:flex items-center space-x-6 pr-10">
+    <nav className="hidden md:flex items-center space-x-6 pr-10 text-white">
       <Link
         to="inicio"
         smooth={true}
         duration={500}
-        className="text-sm font-medium hover:text-primary transition-colors cursor-pointer"
+        className="text-md font-medium hover:text-primary transition-colors cursor-pointer"
       >
         Início
       </Link>
@@ -15,15 +15,15 @@ export default function NavDesktop() {
         to="solucoes"
         smooth={true}
         duration={500}
-        className="text-sm font-medium hover:text-primary transition-colors cursor-pointer"
+        className="text-md font-medium hover:text-primary transition-colors cursor-pointer"
       >
-        Soluções
+        Serviços
       </Link>
       <Link
         to="sobre"
         smooth={true}
         duration={500}
-        className="text-sm font-medium hover:text-primary transition-colors cursor-pointer"
+        className="text-md font-medium hover:text-primary transition-colors cursor-pointer"
       >
         Sobre Nós
       </Link>
@@ -31,17 +31,9 @@ export default function NavDesktop() {
         to="clientes"
         smooth={true}
         duration={500}
-        className="text-sm font-medium hover:text-primary transition-colors cursor-pointer"
+        className="text-md font-medium hover:text-primary transition-colors cursor-pointer"
       >
         Clientes
-      </Link>
-      <Link
-        to="contato"
-        smooth={true}
-        duration={500}
-        className="text-sm font-medium hover:text-primary transition-colors cursor-pointer"
-      >
-        Contato
       </Link>
     </nav>
   );

@@ -1,6 +1,6 @@
 // components/Button.jsx
 import React from "react";
-import { MessageCircle } from "lucide-react";
+import { FaWhatsapp } from "react-icons/fa";
 
 const variantClasses = {
   default: "bg-primary text-white hover:bg-primary/90",
@@ -9,7 +9,7 @@ const variantClasses = {
   secondary:
     "bg-white text-primary border border-primary hover:bg-primary hover:text-white",
   whatsapp:
-    "bg-[#25D366] text-white hover:bg-[#1EBE5D] flex items-center gap-2", // WhatsApp verde
+    "bg-[#25D366] text-white hover:bg-[#1EBE5D] flex items-center gap-2",
 };
 
 const sizeClasses = {
@@ -30,7 +30,7 @@ const Button = ({
       className={`${variantClasses[variant]} ${sizeClasses[size]} cursor-pointer font-medium transition-colors duration-200 ${className}`}
       {...props}
     >
-      {variant === "whatsapp" && <MessageCircle size={18} />}
+      {variant === "whatsapp" && <FaWhatsapp size={18} />}
       {children}
     </button>
   );

@@ -3,7 +3,7 @@ import aboutImage from "../../assets/imgs/logoRbSoft.png";
 export default function AboutSection() {
   return (
     <section id="sobre" className="py-20">
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-10">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div>
             <h2 className="text-3xl font-bold mb-4">Sobre a AutoTech</h2>

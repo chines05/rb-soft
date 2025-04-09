@@ -4,6 +4,7 @@ import SolutionsSection from "../components/Solutions/SolutionsSection";
 import AboutSection from "../components/About/AboutSection";
 import CTASection from "../components/CTA/CTASection";
 import Footer from "../components/Footer/Footer";
+import ClientesSection from "../components/Clientes/ClientesSection";
 
 export default function LandingPage() {
   return (
@@ -13,6 +14,7 @@ export default function LandingPage() {
         <HeroSection />
         <SolutionsSection />
         <AboutSection />
+        <ClientesSection />
         <CTASection />
       </main>
       <Footer />
