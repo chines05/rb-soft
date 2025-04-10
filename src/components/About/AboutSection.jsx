@@ -1,4 +1,4 @@
-import aboutImage from "../../assets/imgs/logoRbSoft.png";
+import aboutImage from "../../assets/imgs/WhatsApp Image 2025-04-10 at 20.12.17.jpeg";
 
 export default function AboutSection() {
   return (
