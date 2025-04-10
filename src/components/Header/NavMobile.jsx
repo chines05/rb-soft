@@ -5,7 +5,7 @@ export default function NavMobile({ isOpen, onClose }) {
 
   return (
     <div className="md:hidden fixed top-[70px] left-0 right-0 z-40">
-      <div className="bg-[#2f239c]  bg-opacity-95 backdrop-blur-sm px-6 py-6 flex flex-col space-y-4 shadow-lg rounded-b-2xl">
+      <div className="bg-[#2f239c] bg-opacity-95 backdrop-blur-sm px-6 py-6 flex flex-col space-y-4 shadow-lg rounded-b-2xl">
         {[
           { to: "inicio", label: "Início" },
           { to: "solucoes", label: "Soluções" },

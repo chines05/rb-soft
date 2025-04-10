@@ -23,7 +23,7 @@ function ParceirasCard({ img }) {
 
 export default function ParceirasSection() {
   return (
-    <section id="parcerias" className="py-20">
+    <section id="parcerias" className="py-20 bg-white">
       <div className="container mx-auto px-10">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold mb-4">Nossas Parcerias</h2>

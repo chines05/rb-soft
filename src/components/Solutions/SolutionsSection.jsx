@@ -12,25 +12,25 @@ const solutions = [
     icon: <FaCalculator />,
     title: "PDV Inteligente",
     description:
-      "Sistema de ponto de venda completo com gestão de estoque, relatórios e integração com e-commerce.",
+      "Otimize suas vendas com um ponto de venda moderno, rápido, integrado e fácil de usar todos os dias.",
   },
   {
     icon: <FaCalendar />,
-    title: "Gestão de Inventário",
+    title: "Gestão de Estoque",
     description:
-      "Sistema de ponto de venda completo com gestão de estoque, relatórios e integração com e-commerce.",
+      "Controle seu estoque em tempo real, evitando perdas, excessos e garantindo reposições sempre eficientes.",
   },
   {
     icon: <FaDatabase />,
-    title: "Análise de Dados",
+    title: "Relatórios Gerenciais",
     description:
-      "Sistema de ponto de venda completo com gestão de estoque, relatórios e integração com e-commerce.",
+      "Tome decisões mais estratégicas com relatórios automáticos, claros, detalhados e sempre atualizados em tempo.",
   },
 ];
 
 export default function SolutionsSection() {
   return (
-    <section data-aos="zoom-out-up" id="solucoes" className="py-30 bg-gray-50">
+    <section data-aos="zoom-out-up" id="solucoes" className="py-30">
       <div className="container mx-auto px-10">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold mb-4">Nossas Soluções</h2>

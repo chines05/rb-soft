@@ -48,7 +48,7 @@ const clientes = [
 
 export default function ClientesSection() {
   return (
-    <section id="clientes" className="py-20 bg-gray-50">
+    <section id="clientes" className="py-20">
       <div className="container mx-auto px-10">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold mb-4">Clientes Satisfeitos</h2>

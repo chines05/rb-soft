@@ -7,7 +7,7 @@ import Footer from "../components/Footer/Footer";
 import ClientesSection from "../components/Clientes/ClientesSection";
 import ParceirasSection from "../components/Parcerias/ParceiriasSections";
 
-// TODO: #771bd6, #dceaf4, #3e84a5, #2f239cda
+// TODO: #771bd6, #dceaf4, #3e84a5, #2f239cda, #6cafcf
 
 export default function LandingPage() {
   return (
