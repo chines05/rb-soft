@@ -10,8 +10,8 @@ export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header className="fixed top-0 left-0 right-0 bg-[#2f239cda] backdrop-blur-sm z-50 border-b">
-      <div className="container mx-auto px-8 sm:px-5 md:px-8 py-3 flex items-center justify-between">
+    <header className="fixed top-0 left-0 right-0 bg-[#2f239cda] backdrop-blur-sm z-50 border-b w-full">
+      <div className="container mx-auto px-8 sm:px-5 md:px-4 py-3 flex items-center justify-between w-full">
         <div className="flex items-center">
           <img src={Logo} alt="AutoTech Logo" width={50} />
           <div className="flex items-center gap-1 ml-2">
@@ -23,15 +23,14 @@ export default function Header() {
         <NavDesktop />
 
         <Button
-          variant="ghost"
           size="icon"
-          className="md:hidden"
+          className="md:hidden "
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
         >
           {mobileMenuOpen ? (
-            <IoClose className="h-6 w-6 text-white" />
+            <IoClose className="h-6 w-6 text-white hover:text-[#00ffc3] transition-colors" />
           ) : (
-            <IoMenu className="h-6 w-6 text-white" />
+            <IoMenu className="h-6 w-6 text-white hover:text-[#00ffc3] transition-colors" />
           )}
         </Button>
       </div>

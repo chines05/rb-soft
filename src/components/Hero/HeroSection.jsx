@@ -10,7 +10,7 @@ export default function HeroSection() {
         <img
           src={heroBg}
           alt="Automação Comercial"
-          className="object-cover w-full h-full"
+          className="object-cover w-full h-screen"
         />
         <div className="absolute inset-0 bg-black/10" />
       </div>

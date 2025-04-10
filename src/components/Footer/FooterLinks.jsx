@@ -7,17 +7,20 @@ export default function FooterLinks({ title, links }) {
       <ul className="space-y-2">
         {links.map((link, index) => (
           <li key={index}>
-            <a
-              href="#"
+            <span
               className={`transition ${
                 link.text === "Fale Conosco"
-                  ? "text-[#25D366] hover:text-[#4aff74]"
+                  ? "text-[#25D366] hover:text-[#4aff74] cursor-pointer"
                   : "text-gray-400 hover:text-white"
               }`}
-              onClick={link.text === "Fale Conosco" && handleWhatsAppClick}
+              onClick={() => {
+                if (link.text === "Fale Conosco") {
+                  handleWhatsAppClick();
+                }
+              }}
             >
               {link.text}
-            </a>
+            </span>
           </li>
         ))}
       </ul>
