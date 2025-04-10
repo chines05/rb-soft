@@ -30,7 +30,7 @@ const solutions = [
 
 export default function SolutionsSection() {
   return (
-    <section id="solucoes" className="py-20 bg-gray-50">
+    <section data-aos="zoom-out-up" id="solucoes" className="py-30 bg-gray-50">
       <div className="container mx-auto px-10">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold mb-4">Nossas Soluções</h2>
@@ -61,12 +61,6 @@ export default function SolutionsSection() {
             </SwiperSlide>
           ))}
         </Swiper>
-
-        {/* <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {solutions.map((solution, index) => (
-            <SolutionCard key={index} {...solution} />
-          ))}
-        </div> */}
       </div>
     </section>
   );

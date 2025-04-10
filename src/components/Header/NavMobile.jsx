@@ -4,8 +4,8 @@ export default function NavMobile({ isOpen, onClose }) {
   if (!isOpen) return null;
 
   return (
-    <div className="md:hidden fixed inset-0 bg-white z-40 mt-16">
-      <div className="bg-zinc-200 container mx-auto px-4 py-6 flex flex-col space-y-4">
+    <div className="md:hidden fixed inset-0 bg-zinc-200 z-40 mt-16">
+      <div className="bg-zinc-200 container px-4 py-6 flex flex-col space-y-4">
         <Link
           to="inicio"
           smooth={true}

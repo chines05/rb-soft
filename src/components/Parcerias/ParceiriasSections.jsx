@@ -1,10 +1,3 @@
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination, Navigation } from "swiper/modules";
-import "swiper/css";
-import "swiper/css/pagination";
-import "swiper/css/navigation";
-import ParceirasCard from "./ParceirasCard";
-
 import HeraSistemas from "../../assets/imgs/HeraSistemas.png";
 import TorgeSistemas from "../../assets/imgs/TorgeSistemas.png";
 
@@ -15,10 +8,18 @@ const parceiros = [
   {
     img: TorgeSistemas,
   },
-  {
-    img: TorgeSistemas,
-  },
 ];
+
+function ParceirasCard({ img }) {
+  return (
+    <div data-aos="zoom-in" className="h-60">
+      <img
+        src={img}
+        className="w-full h-full rounded-full flex items-center justify-start border-black border-r-2 border-b-2"
+      />
+    </div>
+  );
+}
 
 export default function ParceirasSection() {
   return (
@@ -32,27 +33,11 @@ export default function ParceirasSection() {
           </p>
         </div>
 
-        <Swiper
-          modules={[Pagination, Navigation]}
-          spaceBetween={30}
-          slidesPerView={1}
-          pagination={{ clickable: true }}
-          navigation
-          breakpoints={{
-            768: {
-              slidesPerView: 2,
-            },
-            1024: {
-              slidesPerView: 3,
-            },
-          }}
-        >
+        <div className="flex flex-col md:flex-row gap-5 md:gap-15 items-center justify-center">
           {parceiros.map((parceria, index) => (
-            <SwiperSlide key={index}>
-              <ParceirasCard {...parceria} />
-            </SwiperSlide>
+            <ParceirasCard key={index} {...parceria} />
           ))}
-        </Swiper>
+        </div>
       </div>
     </section>
   );

@@ -17,14 +17,23 @@ export default function HeroSection() {
 
       <div className="relative z-10 container mx-auto px-10 h-full flex flex-col justify-center">
         <div className="max-w-2xl text-white">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">
+          <h1
+            data-aos="fade-down"
+            className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4"
+          >
             Soluções de Automação para seu Negócio
           </h1>
-          <p className="text-lg md:text-xl opacity-90 mb-8">
+          <p
+            data-aos="fade-right"
+            className="text-lg md:text-xl opacity-90 mb-8"
+          >
             Transforme sua operação comercial com nossas soluções inteligentes
             de automação. Aumente a eficiência e reduza custos.
           </p>
-          <div className="flex flex-col md:flex-row items-center justify-start w-[100%] gap-4">
+          <div
+            data-aos="fade-right"
+            className="flex flex-col md:flex-row items-center justify-start w-[100%] gap-4"
+          >
             <h1>Conheça Nossas Soluções</h1>
             <Button variant="whatsapp" size="lg" onClick={handleWhatsAppClick}>
               Fale Conosco

@@ -12,7 +12,12 @@ export default function CTASection() {
           Entre em contato conosco hoje mesmo e descubra como nossas soluções de
           automação podem impulsionar seu negócio.
         </p>
-        <Button size="lg" variant="whatsapp" onClick={handleWhatsAppClick}>
+        <Button
+          data-aos="fade-right"
+          size="lg"
+          variant="whatsapp"
+          onClick={handleWhatsAppClick}
+        >
           Automatize seu Negócio
         </Button>
       </div>
