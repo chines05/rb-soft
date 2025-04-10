@@ -1,27 +1,27 @@
 import SolutionCard from "./SolutionCard";
-import { Calculator, CalendarCheck2, Database } from "lucide-react";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
+import { FaCalculator, FaCalendar, FaDatabase } from "react-icons/fa";
 
 const solutions = [
   {
-    icon: <Calculator />,
+    icon: <FaCalculator />,
     title: "PDV Inteligente",
     description:
       "Sistema de ponto de venda completo com gestão de estoque, relatórios e integração com e-commerce.",
   },
   {
-    icon: <CalendarCheck2 />,
+    icon: <FaCalendar />,
     title: "Gestão de Inventário",
     description:
       "Sistema de ponto de venda completo com gestão de estoque, relatórios e integração com e-commerce.",
   },
   {
-    icon: <Database />,
+    icon: <FaDatabase />,
     title: "Análise de Dados",
     description:
       "Sistema de ponto de venda completo com gestão de estoque, relatórios e integração com e-commerce.",

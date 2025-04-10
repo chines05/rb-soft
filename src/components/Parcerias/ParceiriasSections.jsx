@@ -5,8 +5,8 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import ParceirasCard from "./ParceirasCard";
 
-import HeraSistemas from "../../assets/imgs/HeraSistemas.jpeg";
-import TorgeSistemas from "../../assets/imgs/TorgeSistemas.jpeg";
+import HeraSistemas from "../../assets/imgs/HeraSistemas.png";
+import TorgeSistemas from "../../assets/imgs/TorgeSistemas.png";
 
 const parceiros = [
   {
@@ -22,7 +22,7 @@ const parceiros = [
 
 export default function ParceirasSection() {
   return (
-    <section id="clientes" className="py-10 ">
+    <section id="parcerias" className="py-20">
       <div className="container mx-auto px-10">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold mb-4">Nossas Parcerias</h2>

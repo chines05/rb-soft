@@ -4,7 +4,7 @@ import Button from "../ui/Button";
 export default function CTASection() {
   return (
     <section className="py-10 bg-primary text-black">
-      <div className="container mx-auto px-4 bg-slate-50 text-center flex flex-col items-center py-13">
+      <div className="container mx-auto px-4 bg-slate-50 text-center flex flex-col items-center py-10">
         <h2 className="text-3xl font-bold mb-4">
           Pronto para transformar seu negócio?
         </h2>

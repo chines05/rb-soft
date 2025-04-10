@@ -2,7 +2,7 @@ import { Link } from "react-scroll";
 
 export default function NavDesktop() {
   return (
-    <nav className="hidden md:flex items-center space-x-6 pr-10 text-white">
+    <nav className="hidden md:flex items-center space-x-6 pr-5 text-white">
       <Link
         to="inicio"
         smooth={true}

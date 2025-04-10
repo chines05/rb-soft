@@ -1,4 +1,4 @@
-import { Star } from "lucide-react";
+import { FaStar } from "react-icons/fa";
 
 export default function ClientesCard({ icon, title, description }) {
   return (
@@ -6,11 +6,11 @@ export default function ClientesCard({ icon, title, description }) {
       <div className="flex items-center justify-start mb-4">
         {icon}
         <div className="flex ml-2">
-          <Star className="w-5 h-5 text-yellow-500" />
-          <Star className="w-5 h-5 text-yellow-500" />
-          <Star className="w-5 h-5 text-yellow-500" />
-          <Star className="w-5 h-5 text-yellow-500" />
-          <Star className="w-5 h-5 text-yellow-500" />
+          <FaStar className="w-5 h-5 text-yellow-500" />
+          <FaStar className="w-5 h-5 text-yellow-500" />
+          <FaStar className="w-5 h-5 text-yellow-500" />
+          <FaStar className="w-5 h-5 text-yellow-500" />
+          <FaStar className="w-5 h-5 text-yellow-500" />
         </div>
       </div>
       <h3 className="text-xl font-semibold mb-2">{title}</h3>
