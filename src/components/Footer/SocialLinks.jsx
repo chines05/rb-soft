@@ -1,20 +1,44 @@
-import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
+import {
+  FaWhatsapp,
+  FaInstagram,
+  FaLinkedinIn,
+  FaFacebookF,
+} from "react-icons/fa";
 
 export default function SocialLinks() {
   return (
     <div className="flex space-x-4">
-      <a className="hover:text-white transition" target="_blank">
-        <FaFacebookF />
+      <a
+        href="https://api.whatsapp.com/send?phone=SEUNUMERO"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="w-10 h-10 rounded-full bg-gray-700 hover:bg-[#00ffc3] hover:text-gray-900 flex items-center justify-center text-white transition-colors duration-300"
+      >
+        <FaWhatsapp className="text-lg" />
       </a>
       <a
         href="https://www.instagram.com/rbsoft.ac/"
         target="_blank"
-        className="hover:text-white transition"
+        rel="noopener noreferrer"
+        className="w-10 h-10 rounded-full bg-gray-700 hover:bg-[#00ffc3] hover:text-gray-900 flex items-center justify-center text-white transition-colors duration-300"
       >
-        <FaInstagram />
+        <FaInstagram className="text-lg" />
       </a>
-      <a className="hover:text-white transition" target="_blank">
-        <FaLinkedinIn />
+      <a
+        href="https://www.linkedin.com/company/rbsoft"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="w-10 h-10 rounded-full bg-gray-700 hover:bg-[#00ffc3] hover:text-gray-900 flex items-center justify-center text-white transition-colors duration-300"
+      >
+        <FaLinkedinIn className="text-lg" />
+      </a>
+      <a
+        href="https://www.facebook.com/rbsoft.ac"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="w-10 h-10 rounded-full bg-gray-700 hover:bg-[#00ffc3] hover:text-gray-900 flex items-center justify-center text-white transition-colors duration-300"
+      >
+        <FaFacebookF className="text-lg" />
       </a>
     </div>
   );

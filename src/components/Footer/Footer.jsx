@@ -1,27 +1,45 @@
 import FooterLinks from "./FooterLinks";
 import SocialLinks from "./SocialLinks";
-import Logo from "../../assets/imgs/logoRbSoft.png";
+import Logo from "../../assets/imgs/IconeRbSoft.png";
+import Button from "../ui/Button";
+import { handleWhatsAppClick } from "../../utils/handleWhatsAppClick";
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-900 text-gray-300 py-12">
-      <div className="container mx-auto px-10">
-        <div className="grid md:grid-cols-4 gap-8">
-          <div>
-            <div className="flex items-center mb-4">
+    <footer className="bg-[#1a1a2e] text-gray-300 pt-16 pb-8">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-5 gap-10">
+          {/* Logo e sobre */}
+          <div className="md:col-span-2 lg:col-span-2">
+            <div className="flex items-center mb-6">
               <img
                 src={Logo}
-                alt="AutoTech Logo"
-                width={40}
-                height={40}
-                className="mr-2 bg-white rounded"
+                alt="RB Soft Logo"
+                width={50}
+                height={50}
+                className="mr-3"
               />
-              <span className="font-bold text-xl text-white">AutoTech</span>
+              <div className="flex items-center gap-1">
+                <h1 className="text-3xl font-extrabold text-white">RB</h1>
+                <h1 className="text-3xl font-extrabold text-[#00ffc3]">SOFT</h1>
+              </div>
             </div>
-            <p className="text-sm opacity-75 mb-4">
-              Soluções inteligentes de automação comercial para impulsionar seu
+            <p className="text-gray-400 mb-6 max-w-xs">
+              Soluções completas em automação comercial para impulsionar seu
               negócio.
             </p>
+
+            <div className="mb-6">
+              <Button
+                size="sm"
+                variant="whatsapp"
+                onClick={handleWhatsAppClick}
+                className="w-full sm:w-auto bg-[#00ffc3] hover:bg-[#00e6b3] text-gray-900"
+              >
+                Fale Conosco
+              </Button>
+            </div>
+
             <SocialLinks />
           </div>
 
@@ -29,9 +47,9 @@ export default function Footer() {
             title="Soluções"
             links={[
               { text: "PDV Inteligente" },
-              { text: "Gestão de Inventário" },
-              { text: "Relatórios Automatizados" },
-              { text: "Integração com Sistemas" },
+              { text: "Gestão de Estoque" },
+              { text: "Business Intelligence" },
+              { text: "Aplicativo Mobile" },
             ]}
           />
 
@@ -39,13 +57,36 @@ export default function Footer() {
             title="Empresa"
             links={[
               { text: "Sobre Nós" },
-              { text: "Carreiras" },
-              { text: "Blog" },
+              { text: "Clientes" },
               { text: "Parceiros" },
+              { text: "Trabalhe Conosco" },
             ]}
           />
 
-          <FooterLinks title="Suporte" links={[{ text: "Fale Conosco" }]} />
+          <FooterLinks
+            title="Suporte"
+            links={[
+              { text: "Central de Ajuda" },
+              { text: "Documentação" },
+              { text: "Atendimento" },
+              { text: "Status" },
+            ]}
+          />
+        </div>
+
+        {/* Rodapé inferior */}
+        <div className="border-t border-gray-700 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+          <p className="text-gray-500 text-sm mb-4 md:mb-0">
+            © {new Date().getFullYear()} RB Soft. Todos os direitos reservados.
+          </p>
+          <div className="flex space-x-6">
+            <span className="text-gray-500 hover:text-[#00ffc3] text-sm transition-colors">
+              Termos de Serviço
+            </span>
+            <span className="text-gray-500 hover:text-[#00ffc3] text-sm transition-colors">
+              Política de Privacidade
+            </span>
+          </div>
         </div>
       </div>
     </footer>

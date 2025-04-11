@@ -1,42 +1,69 @@
+import ParceirasCard from "./ParceirasCard";
 import HeraSistemas from "../../assets/imgs/HeraSistemas.png";
 import TorgeSistemas from "../../assets/imgs/TorgeSistemas.png";
 
 const parceiros = [
   {
     img: HeraSistemas,
+    name: "Hera Sistemas",
+    desc: "Especialista em soluções ERP corporativas",
+    url: "https://www.herasistemas.com",
+    color: "from-blue-600 to-blue-800", // Cores personalizadas
   },
   {
     img: TorgeSistemas,
+    name: "Torge Sistemas",
+    desc: "Líder em automação comercial para varejo",
+    url: "https://www.torgesistemas.com.br",
+    color: "from-purple-600 to-purple-800",
   },
 ];
 
-function ParceirasCard({ img }) {
-  return (
-    <div data-aos="zoom-in" className="h-60">
-      <img
-        src={img}
-        className="w-full h-full rounded-full flex items-center justify-start border-black border-r-2 border-b-2"
-      />
-    </div>
-  );
-}
-
 export default function ParceirasSection() {
   return (
-    <section id="parcerias" className="py-20 bg-white">
-      <div className="container mx-auto px-10">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold mb-4">Nossas Parcerias</h2>
-          <p className="text-muted-foreground max-w-2xl mx-auto">
-            Nossos clientes apreciam a qualidade e eficiência das nossas
-            soluções de automação comercial.
+    <section
+      id="parcerias"
+      className="relative py-24 bg-gradient-to-b from-white to-[#f8fafc]"
+    >
+      {/* Elementos decorativos */}
+      <div className="absolute top-0 left-0 w-full h-full opacity-10">
+        <div className="absolute top-1/3 -left-20 w-80 h-80 bg-purple-300 rounded-full mix-blend-multiply filter blur-3xl"></div>
+        <div className="absolute bottom-1/3 -right-20 w-80 h-80 bg-blue-300 rounded-full mix-blend-multiply filter blur-3xl"></div>
+      </div>
+
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div className="text-center mb-16" data-aos="fade-up">
+          <span className="inline-block py-1.5 px-4 mb-4 text-sm font-semibold text-[#2f239c] bg-[#2f239c]/10 rounded-full">
+            PARCEIROS ESTRATÉGICOS
+          </span>
+          <h2 className="text-4xl font-bold text-gray-900 mb-4">
+            Nossos Principais Parceiros
+          </h2>
+          <div className="w-20 h-1.5 bg-gradient-to-r from-[#771bd6] to-[#00ffc3] mx-auto mb-6 rounded-full"></div>
+          <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+            Colaborações que elevam a qualidade das nossas soluções
           </p>
         </div>
 
-        <div className="flex flex-col md:flex-row gap-5 md:gap-15 items-center justify-center">
-          {parceiros.map((parceria, index) => (
-            <ParceirasCard key={index} {...parceria} />
+        {/* Grid especial para 2 parceiros */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-4xl mx-auto">
+          {parceiros.map((parceiro, index) => (
+            <div
+              key={index}
+              data-aos="fade-up"
+              data-aos-delay={index * 150}
+              className="flex justify-center"
+            >
+              <ParceirasCard {...parceiro} />
+            </div>
           ))}
+        </div>
+
+        {/* Rodapé da seção */}
+        <div className="text-center mt-16" data-aos="fade-up">
+          <p className="text-gray-500 text-sm">
+            Parcerias certificadas e homologadas pela RB Soft
+          </p>
         </div>
       </div>
     </section>

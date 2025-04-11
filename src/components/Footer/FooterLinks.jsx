@@ -1,24 +1,13 @@
-import { handleWhatsAppClick } from "../../utils/handleWhatsAppClick";
-
 export default function FooterLinks({ title, links }) {
   return (
     <div>
-      <h4 className="text-white font-semibold mb-4">{title}</h4>
-      <ul className="space-y-2">
+      <h4 className="text-white font-bold text-lg mb-6 uppercase tracking-wider">
+        {title}
+      </h4>
+      <ul className="space-y-3">
         {links.map((link, index) => (
           <li key={index}>
-            <span
-              className={`transition ${
-                link.text === "Fale Conosco"
-                  ? "text-[#25D366] hover:text-[#4aff74] cursor-pointer"
-                  : "text-gray-400 hover:text-white"
-              }`}
-              onClick={() => {
-                if (link.text === "Fale Conosco") {
-                  handleWhatsAppClick();
-                }
-              }}
-            >
+            <span className="text-gray-400 hover:text-[#00ffc3] transition-colors duration-300 text-sm">
               {link.text}
             </span>
           </li>
