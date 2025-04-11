@@ -1,4 +1,5 @@
-import heroBg from "../../assets/imgs/BgImage.png";
+import bgImageDesktop from "../../assets/imgs/BgImageDesktop.png";
+import bgImageMobile from "../../assets/imgs/BgImageMobile.png";
 import Button from "../ui/Button";
 
 import { handleWhatsAppClick } from "../../utils/handleWhatsAppClick";
@@ -8,9 +9,14 @@ export default function HeroSection() {
     <section id="inicio" className="relative h-screen w-full">
       <div className="absolute inset-0 z-0">
         <img
-          src={heroBg}
+          src={bgImageDesktop}
           alt="Automação Comercial"
-          className="object-cover w-full h-screen"
+          className="object-cover w-full h-screen hidden sm:block"
+        />
+        <img
+          src={bgImageMobile}
+          alt="Automação Comercial"
+          className="object-cover w-full h-screen sm:hidden"
         />
         <div className="absolute inset-0 bg-black/10" />
       </div>
