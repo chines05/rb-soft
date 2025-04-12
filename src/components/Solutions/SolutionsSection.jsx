@@ -17,7 +17,7 @@ const solutions = [
     icon: <FaCashRegister className="text-4xl" />,
     title: "PDV Inteligente",
     description:
-      "Sistema completo para gestão de vendas com integração em tempo real, múltiplas formas de pagamento e relatórios detalhados.",
+      "Sistema completo para gestão de vendas com integração em tempo real e relatórios detalhados.",
     color: "from-purple-500 to-indigo-600",
   },
   {
