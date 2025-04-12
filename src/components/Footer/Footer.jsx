@@ -34,7 +34,7 @@ export default function Footer() {
                 size="sm"
                 variant="whatsapp"
                 onClick={handleWhatsAppClick}
-                className="w-full sm:w-auto bg-[#00ffc3] hover:bg-[#00e6b3] text-gray-900"
+                className=" sm:w-auto bg-[#00ffc3] hover:bg-[#00e6b3] text-gray-900"
               >
                 Fale Conosco
               </Button>

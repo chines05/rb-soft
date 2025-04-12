@@ -11,7 +11,10 @@ export default function Header() {
   return (
     <header className="fixed top-0 left-0 right-0 bg-[#2f239c] bg-opacity-95 backdrop-blur-md z-50 shadow-sm">
       <div className="container mx-auto px-4 sm:px-6 py-3 flex items-center justify-between">
-        <div className="flex items-center">
+        <div
+          onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+          className="flex items-center cursor-pointer"
+        >
           <img
             src={Logo}
             alt="RB Soft Logo"

@@ -35,7 +35,7 @@ export default function ClientesSection() {
   return (
     <section
       id="clientes"
-      className="relative py-24 bg-gradient-to-b from-[#f8fafc] to-white overflow-hidden"
+      className="relative py-10 bg-gradient-to-b from-[#f8fafc] to-white overflow-hidden"
     >
       <div className="absolute top-0 left-0 w-full h-full opacity-10">
         <div className="absolute top-1/4 -right-20 w-80 h-80 bg-purple-300 rounded-full mix-blend-multiply filter blur-3xl"></div>

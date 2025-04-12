@@ -8,7 +8,7 @@ const parceiros = [
     name: "Hera Sistemas",
     desc: "Especialista em soluções ERP corporativas",
     url: "https://www.herasistemas.com",
-    color: "from-blue-600 to-blue-800", // Cores personalizadas
+    color: "from-blue-600 to-blue-800",
   },
   {
     img: TorgeSistemas,
@@ -23,7 +23,7 @@ export default function ParceirasSection() {
   return (
     <section
       id="parcerias"
-      className="relative py-24 bg-gradient-to-b from-white to-[#f8fafc]"
+      className="relative py-10 bg-gradient-to-b from-white to-[#f8fafc]"
     >
       {/* Elementos decorativos */}
       <div className="absolute top-0 left-0 w-full h-full opacity-10">

@@ -4,7 +4,7 @@ export default function AboutSection() {
   return (
     <section
       id="sobre"
-      className="relative py-24 bg-gradient-to-b from-white to-[#f8fafc] overflow-hidden"
+      className="relative py-10 bg-gradient-to-b from-white to-[#f8fafc] overflow-hidden"
     >
       {/* Elementos decorativos de fundo */}
       <div className="absolute top-0 left-0 w-full h-full opacity-10">
