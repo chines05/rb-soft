@@ -24,7 +24,7 @@ export default function HeroSection() {
         <div className="container mx-auto px-6 flex-1 flex items-center">
           <div className="max-w-2xl w-full py-12">
             <h1
-              className="text-4xl md:text-5xl lg:text-[3.5rem] font-bold text-white mb-6 leading-tight"
+              className="text-4xl md:text-5xl lg:text-[3.5rem] font-bold text-white mt-10 mb-6 leading-tight"
               data-aos="fade-up"
             >
               <span className="text-[#00ffc3]">Solução completa</span> para
