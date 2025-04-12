@@ -15,7 +15,7 @@ const clientes = [
   },
   {
     image: "src/assets/imgs/IconeRbSoft.png",
-    name: "Jug Santos",
+    name: "Weder Santos",
     role: "Gerente - Supermercados Santos",
     testimonial:
       "Implantamos em todas nossas filiais. Controle de estoque em tempo real foi um divisor de águas para nosso negócio.",
@@ -23,7 +23,7 @@ const clientes = [
   },
   {
     image: "src/assets/imgs/IconeRbSoft.png",
-    name: "Weder Santos",
+    name: "Gabriel Martins",
     role: "CEO - Posto Combustíveis",
     testimonial:
       "Sistema completo que atende todas nossas necessidades. A equipe da RB Soft é parceira em nosso crescimento.",

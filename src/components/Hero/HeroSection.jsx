@@ -20,25 +20,34 @@ export default function HeroSection() {
         <div className="absolute bg-black opacity-20 inset-0 z-0" />
       </div>
 
-      <div className="relative z-10 flex-1 flex flex-col justify-center pt-24">
-        {" "}
+      <div className="relative z-10 flex-1 flex flex-col">
         <div className="container mx-auto px-6 flex-1 flex items-center">
-          {" "}
-          <div className="max-w-2xl w-full">
-            <h1 className="text-4xl md:text-5xl lg:text-[3.5rem] font-bold text-white mb-6 leading-tight">
+          <div className="max-w-2xl w-full py-12">
+            <h1
+              className="text-4xl md:text-5xl lg:text-[3.5rem] font-bold text-white mb-6 leading-tight"
+              data-aos="fade-up"
+            >
               <span className="text-[#00ffc3]">Solução completa</span> para
               <br />
               seu <span className="text-white">varejo digital</span>
             </h1>
 
-            <p className="text-xl text-white/90 mb-8 max-w-lg">
+            <p
+              className="text-xl text-white/90 mb-8 max-w-lg"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
               Tudo o que você precisa para <strong>vender mais</strong>,
               <strong> controlar melhor</strong> e{" "}
               <strong>crescer rápido</strong>
               em uma única plataforma.
             </p>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-10">
+            <div
+              className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-10"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
               {[
                 "PDV com tecnologia ágil",
                 "Controle de estoque preciso",
@@ -47,14 +56,23 @@ export default function HeroSection() {
                 "Suporte especializado",
                 "Crescimento escalável",
               ].map((item, index) => (
-                <div key={index} className="flex items-center">
+                <div
+                  key={index}
+                  className="flex items-center"
+                  data-aos="fade-up"
+                  data-aos-delay={300 + index * 50}
+                >
                   <div className="w-2 h-2 bg-[#00ffc3] rounded-full mr-3"></div>
                   <span className="text-white/90 font-medium">{item}</span>
                 </div>
               ))}
             </div>
 
-            <div className="flex flex-col sm:flex-row gap-4 mt-8">
+            <div
+              className="flex flex-col sm:flex-row gap-4"
+              data-aos="fade-up"
+              data-aos-delay="500"
+            >
               <Button
                 variant="whatsapp"
                 size="lg"
@@ -78,18 +96,19 @@ export default function HeroSection() {
             </div>
           </div>
         </div>
-        <div className="pb-8 flex justify-center w-full">
+
+        <div className="mt-auto pb-8 flex justify-center w-full relative z-20">
           <button
             onClick={() =>
               document
                 .getElementById("solucoes")
                 .scrollIntoView({ behavior: "smooth" })
             }
-            className="animate-bounce focus:outline-none"
+            className="animate-bounce focus:outline-none cursor-pointer"
             aria-label="Ir para soluções"
           >
             <svg
-              className="w-6 h-6 text-white/80"
+              className="w-8 h-8 text-white hover:text-[#00ffc3] transition-colors"
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"
@@ -99,7 +118,7 @@ export default function HeroSection() {
                 strokeLinejoin="round"
                 strokeWidth="2"
                 d="M19 14l-7 7m0 0l-7-7m7 7V3"
-              ></path>
+              />
             </svg>
           </button>
         </div>

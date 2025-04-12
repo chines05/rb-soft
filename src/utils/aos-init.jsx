@@ -6,7 +6,7 @@ export function AosInit() {
   useEffect(() => {
     Aos.init({
       duration: 1200,
-      once: false,
+      once: true,
     });
   }, []);
 
