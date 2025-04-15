@@ -1,6 +1,6 @@
 export default function SolutionCard({ icon, title, description, color }) {
   return (
-    <div className="group h-full">
+    <div className="group h-full mb-5">
       <div className="h-full transition-all duration-500 ease-in-out group-hover:-translate-y-2">
         <div className="relative h-full min-h-[200px] bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100 transition-all duration-300 group-hover:shadow-xl flex flex-col">
           {/* Topo com gradiente e ícone */}

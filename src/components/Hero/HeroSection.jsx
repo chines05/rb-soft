@@ -81,18 +81,6 @@ export default function HeroSection() {
               >
                 Quero conhecer o sistema
               </Button>
-              <Button
-                variant="outline"
-                size="lg"
-                className="w-full sm:w-auto px-8 text-white border-white hover:bg-white/10"
-                onClick={() =>
-                  document
-                    .getElementById("solucoes")
-                    .scrollIntoView({ behavior: "smooth" })
-                }
-              >
-                Ver demonstração
-              </Button>
             </div>
           </div>
         </div>

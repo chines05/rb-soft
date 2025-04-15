@@ -4,16 +4,17 @@ import Button from "../ui/Button";
 import NavDesktop from "./NavDesktop";
 import NavMobile from "./NavMobile";
 import { IoClose, IoMenu } from "react-icons/io5";
+import { motion } from "framer-motion";
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header className="fixed top-0 left-0 right-0 bg-[#2f239c] bg-opacity-95 backdrop-blur-md z-50 shadow-sm">
+    <header className="fixed top-0 left-0 right-0 bg-[#2f239c] opacity-90  z-50 shadow-2xl">
       <div className="container mx-auto px-4 sm:px-6 py-3 flex items-center justify-between">
         <div
           onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-          className="flex items-center cursor-pointer"
+          className="flex items-center cursor-pointer hover:opacity-90 transition-opacity duration-200"
         >
           <img
             src={Logo}
@@ -37,14 +38,23 @@ export default function Header() {
         <Button
           size="icon"
           variant="ghost"
-          className="md:hidden text-white hover:text-[#00ffc3] hover:bg-white/10"
+          className="md:hidden text-white hover:text-[#00ffc3] hover:bg-white/10 transition-all duration-300 ease-[cubic-bezier(0.4,0,0.2,1)]"
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
         >
-          {mobileMenuOpen ? (
-            <IoClose className="h-6 w-6" />
-          ) : (
-            <IoMenu className="h-6 w-6" />
-          )}
+          <motion.div
+            animate={mobileMenuOpen ? "open" : "closed"}
+            variants={{
+              open: { rotate: 90 },
+              closed: { rotate: 0 },
+            }}
+            transition={{ duration: 0.3 }}
+          >
+            {mobileMenuOpen ? (
+              <IoClose className="h-6 w-6" />
+            ) : (
+              <IoMenu className="h-6 w-6" />
+            )}
+          </motion.div>
         </Button>
       </div>
 

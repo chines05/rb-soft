@@ -1,3 +1,5 @@
+import { Link } from "react-scroll";
+
 export default function FooterLinks({ title, links }) {
   return (
     <div>
@@ -7,9 +9,13 @@ export default function FooterLinks({ title, links }) {
       <ul className="space-y-3">
         {links.map((link, index) => (
           <li key={index}>
-            <span className="text-gray-400 hover:text-[#00ffc3] transition-colors duration-300 text-sm">
+            <Link
+              to={link.to}
+              smooth={true}
+              className="cursor-pointer text-gray-400 hover:text-[#00ffc3] transition-colors duration-300 text-sm"
+            >
               {link.text}
-            </span>
+            </Link>
           </li>
         ))}
       </ul>

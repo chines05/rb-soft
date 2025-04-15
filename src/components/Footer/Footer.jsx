@@ -46,30 +46,20 @@ export default function Footer() {
           <FooterLinks
             title="Soluções"
             links={[
-              { text: "PDV Inteligente" },
-              { text: "Gestão de Estoque" },
-              { text: "Business Intelligence" },
-              { text: "Aplicativo Mobile" },
+              { text: "PDV Inteligente", to: "solucoes" },
+              { text: "Gestão de Estoque", to: "solucoes" },
+              { text: "Business Intelligence", to: "solucoes" },
+              { text: "Aplicativo Mobile", to: "solucoes" },
             ]}
           />
 
           <FooterLinks
             title="Empresa"
             links={[
-              { text: "Sobre Nós" },
-              { text: "Clientes" },
-              { text: "Parceiros" },
-              { text: "Trabalhe Conosco" },
-            ]}
-          />
-
-          <FooterLinks
-            title="Suporte"
-            links={[
-              { text: "Central de Ajuda" },
-              { text: "Documentação" },
-              { text: "Atendimento" },
-              { text: "Status" },
+              { text: "Sobre Nós", to: "sobre" },
+              { text: "Clientes", to: "clientes" },
+              { text: "Parceiros", to: "parcerias" },
+              { text: "Trabalhe Conosco", to: "cta" },
             ]}
           />
         </div>
