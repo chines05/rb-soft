@@ -14,7 +14,7 @@ const parceiros = [
     img: TorgeSistemas,
     name: "Torge Sistemas",
     desc: "Líder em automação comercial para varejo",
-    url: "https://www.torgesistemas.com.br",
+    url: "https://www.torge.com.br/",
     color: "from-purple-600 to-purple-800",
   },
 ];
