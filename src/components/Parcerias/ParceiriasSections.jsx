@@ -23,7 +23,7 @@ export default function ParceirasSection() {
   return (
     <section
       id="parcerias"
-      className="relative py-10 bg-gradient-to-b from-white to-[#f8fafc]"
+      className="relative z-0 py-10 bg-gradient-to-b from-white to-[#f8fafc]"
     >
       {/* Elementos decorativos */}
       <div className="absolute top-0 left-0 w-full h-full opacity-10">

@@ -52,7 +52,7 @@ export default function NavMobile({ isOpen, onClose }) {
               { to: "inicio", label: "Início" },
               { to: "solucoes", label: "Soluções" },
               { to: "sobre", label: "Sobre Nós" },
-              { to: "clientes", label: "Clientes" },
+              { to: "depoimentos", label: "Depoimentos" },
               { to: "parcerias", label: "Parcerias" },
             ].map((item, index) => (
               <motion.div key={item.to} variants={itemVariants} custom={index}>

@@ -57,7 +57,7 @@ export default function Footer() {
             title="Empresa"
             links={[
               { text: "Sobre Nós", to: "sobre" },
-              { text: "Clientes", to: "clientes" },
+              { text: "Depoimentos", to: "depoimentos" },
               { text: "Parceiros", to: "parcerias" },
               { text: "Trabalhe Conosco", to: "cta" },
             ]}
