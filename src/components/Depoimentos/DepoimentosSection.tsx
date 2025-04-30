@@ -18,7 +18,7 @@ export default function DepoimentosSection() {
     {
       video: MulherNoVideo,
       name: "Yasmin",
-      role: "Dona e Proprietária - Loja Yas Store",
+      role: "Proprietária - Loja Yas Store",
       quote: [
         "✔ Sistema fácil de usar e intuitivo",
         "✔ Controle de estoque eficiente",
@@ -29,8 +29,8 @@ export default function DepoimentosSection() {
     },
     {
       video: MulherFalandoVideo,
-      name: "Juliana Santos",
-      role: "Proprietária - Mercearia São João",
+      name: "Evelyn",
+      role: "Gerente - Atacado Chique, Moda Antiga",
       quote: [
         "✔ Rápido, prático e acessível",
         "✔ Controle financeiro integrado",

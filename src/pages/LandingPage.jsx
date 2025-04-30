@@ -7,7 +7,7 @@ import Footer from "../components/Footer/Footer";
 import ParceirasSection from "../components/Parcerias/ParceiriasSections";
 import { Seo } from "../components/Seo";
 import { SchemaMarkup } from "../components/SchemaMarkup";
-import DepoimentosSection from "../components/VideoTestimonials/DepoimentosSection";
+import DepoimentosSection from "../components/Depoimentos/DepoimentosSection";
 
 // TODO: #771bd6, #dceaf4, #3e84a5, #2f239cda, #6cafcf
 

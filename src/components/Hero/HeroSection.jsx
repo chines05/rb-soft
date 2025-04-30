@@ -1,5 +1,6 @@
 import bgImageDesktop from "../../assets/imgs/BgImageDesktop.png";
 import bgImageMobile from "../../assets/imgs/BgImageMobile.png";
+import bgImageCelular from "../../assets/imgs/WhatsApp Image 2025-04-29 at 18.14.27.jpeg";
 import Button from "../ui/Button";
 import { handleWhatsAppClick } from "../../utils/handleWhatsAppClick";
 
@@ -13,11 +14,11 @@ export default function HeroSection() {
           className="hidden sm:block w-full h-full object-cover object-center"
         />
         <img
-          src={bgImageMobile}
+          src={bgImageCelular}
           alt="Sistema RB Soft mobile"
           className="sm:hidden w-full h-full object-cover object-center"
         />
-        <div className="absolute bg-black opacity-20 inset-0 z-0" />
+        <div className="absolute bg-black opacity-60 inset-0 z-0" />
       </div>
 
       <div className="relative z-10 flex-1 flex flex-col">
@@ -27,9 +28,9 @@ export default function HeroSection() {
               className="text-4xl md:text-5xl lg:text-[3.5rem] font-bold text-white mt-10 mb-6 leading-tight"
               data-aos="fade-up"
             >
-              <span className="text-[#00ffc3]">Solução completa</span> para
-              <br />
-              seu <span className="text-white">varejo digital</span>
+              <span className="text-[#00ffc3]">Solução completa</span> <br />{" "}
+              para seu <br />
+              <span className="text-white">varejo digital</span>
             </h1>
 
             <p
