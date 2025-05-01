@@ -24,22 +24,6 @@ export default function SocialLinks() {
       >
         <FaInstagram className="text-lg" />
       </a>
-      <a
-        href="https://www.linkedin.com/company/rbsoft"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="w-10 h-10 rounded-full bg-gray-700 hover:bg-[#00ffc3] hover:text-gray-900 flex items-center justify-center text-white transition-colors duration-300"
-      >
-        <FaLinkedinIn className="text-lg" />
-      </a>
-      <a
-        href="https://www.facebook.com/rbsoft.ac"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="w-10 h-10 rounded-full bg-gray-700 hover:bg-[#00ffc3] hover:text-gray-900 flex items-center justify-center text-white transition-colors duration-300"
-      >
-        <FaFacebookF className="text-lg" />
-      </a>
     </div>
   );
 }

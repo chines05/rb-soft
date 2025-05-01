@@ -2,7 +2,6 @@ import FooterLinks from "./FooterLinks";
 import SocialLinks from "./SocialLinks";
 import Logo from "../../assets/imgs/IconeRbSoft.png";
 import Button from "../ui/Button";
-import { handleWhatsAppClick } from "../../utils/handleWhatsAppClick";
 
 export default function Footer() {
   return (
@@ -28,17 +27,6 @@ export default function Footer() {
               Soluções completas em automação comercial para impulsionar seu
               negócio.
             </p>
-
-            <div className="mb-6">
-              <Button
-                size="sm"
-                variant="whatsapp"
-                onClick={handleWhatsAppClick}
-                className=" sm:w-auto bg-[#00ffc3] hover:bg-[#00e6b3] text-gray-900"
-              >
-                Fale Conosco
-              </Button>
-            </div>
 
             <SocialLinks />
           </div>

@@ -8,6 +8,7 @@ import ParceirasSection from "../components/Parcerias/ParceiriasSections";
 import { Seo } from "../components/Seo";
 import { SchemaMarkup } from "../components/SchemaMarkup";
 import DepoimentosSection from "../components/Depoimentos/DepoimentosSection";
+import { WhatsAppFloat } from "../utils/WhatsAppFloat";
 
 // TODO: #771bd6, #dceaf4, #3e84a5, #2f239cda, #6cafcf
 
@@ -30,6 +31,7 @@ export default function LandingPage() {
         <CTASection />
       </main>
       <Footer />
+      <WhatsAppFloat />
     </div>
   );
 }
