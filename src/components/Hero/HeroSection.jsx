@@ -14,7 +14,7 @@ export default function HeroSection() {
           className="hidden sm:block w-full h-full object-cover object-center"
         />
         <img
-          src={bgImageCelular}
+          src={bgImageMobile}
           alt="Sistema RB Soft mobile"
           className="sm:hidden w-full h-full object-cover object-center"
         />
