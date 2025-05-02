@@ -18,7 +18,7 @@ export default function HeroSection() {
           alt="Sistema RB Soft mobile"
           className="sm:hidden w-full h-full object-cover object-center"
         />
-        <div className="absolute bg-black opacity-60 inset-0 z-0" />
+        <div className="absolute bg-black opacity-10 inset-0 z-0" />
       </div>
 
       <div className="relative z-10 flex-1 flex flex-col">
