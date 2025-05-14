@@ -1,6 +1,5 @@
 import bgImageDesktop from "../../assets/imgs/BgImageDesktop.png";
 import bgImageMobile from "../../assets/imgs/BgImageMobile.png";
-import bgImageCelular from "../../assets/imgs/WhatsApp Image 2025-04-29 at 18.14.27.jpeg";
 import Button from "../ui/Button";
 import { handleWhatsAppClick } from "../../utils/handleWhatsAppClick";
 
@@ -40,7 +39,7 @@ export default function HeroSection() {
             >
               Tudo o que você precisa para <strong>vender mais</strong>,
               <strong> controlar melhor</strong> e{" "}
-              <strong>crescer rápido</strong>
+              <strong>crescer rápido </strong>
               em uma única plataforma.
             </p>
 

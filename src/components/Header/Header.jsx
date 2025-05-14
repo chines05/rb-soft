@@ -16,13 +16,7 @@ export default function Header() {
           onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
           className="flex items-center cursor-pointer hover:opacity-90 transition-opacity duration-200"
         >
-          <img
-            src={Logo}
-            alt="RB Soft Logo"
-            width={48}
-            height={48}
-            className="mr-2"
-          />
+          <img src={Logo} width={48} height={48} className="mr-2" />
           <div className="flex items-center gap-1">
             <h1 className="text-2xl sm:text-3xl font-extrabold text-white">
               RB

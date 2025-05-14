@@ -23,14 +23,14 @@ export default function DepoimentosSection() {
         "✔ Sistema fácil de usar e intuitivo",
         "✔ Controle de estoque eficiente",
         "✔ Suporte atento e especializado",
-        "✔ Treinamentos e suporte 24hrs",
+        "✔ Treinamentos e suporte flexíveis",
         "✔ Solução personalizada para seu negócio",
       ],
     },
     {
       video: MulherFalandoVideo,
       name: "Evelyn",
-      role: "Gerente - Atacado Chique, Moda Antiga",
+      role: "Gerente - Atacado Chique, Moda Íntima",
       quote: [
         "✔ Rápido, prático e acessível",
         "✔ Controle financeiro integrado",
