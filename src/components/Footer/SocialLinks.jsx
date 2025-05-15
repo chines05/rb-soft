@@ -17,7 +17,7 @@ export default function SocialLinks() {
         <FaWhatsapp className="text-lg" />
       </a>
       <a
-        href="https://www.instagram.com/rbsoft.ac/"
+        href="https://www.instagram.com/rbsoft.inf/"
         target="_blank"
         rel="noopener noreferrer"
         className="w-10 h-10 rounded-full bg-gray-700 hover:bg-[#00ffc3] hover:text-gray-900 flex items-center justify-center text-white transition-colors duration-300"
