@@ -17,7 +17,7 @@ export default function LandingPage() {
       <Seo
         title="RB Soft - Automação Comercial Completa"
         description="Solução completa para PDV, estoque e gestão comercial com tecnologia inteligente"
-        keywords="pdv, estoque, automação comercial, sistema de gestão"
+        keywords="automação comercial, sistema PDV, gestão de estoque, RB Soft, rb soft, varejo digital, sistema de gestão"
       />
       <Header />
       <main className="bg-[#dceaf4]">

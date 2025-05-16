@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import MulherNoVideo from "../../assets/videos/mulherNoVideo.mp4";
 import MulherFalandoVideo from "../../assets/videos/mulherFalando.mp4";
+import Marisa from "../../assets/videos/marisa.mp4";
 import { FaPlay } from "react-icons/fa";
 import { motion, AnimatePresence } from "framer-motion";
 import VideoModal from "./VideoModal";
@@ -37,6 +38,18 @@ export default function DepoimentosSection() {
         "✔ PDV inteligente e completo",
         "✔ Relatórios detalhados e customizáveis",
         "✔ Cadastro de clientes e produtos",
+      ],
+    },
+    {
+      video: Marisa,
+      name: "Marisa",
+      role: "Consultora - Club kids, Moda Infantil",
+      quote: [
+        "✔ Super facil e pratico de usar",
+        "✔ Todo controle financeiro",
+        "✔ Controle de estoque",
+        "✔ Controle de toda a sua loja pelo celular",
+        "✔ Relatórios detalhados e customizáveis",
       ],
     },
   ];
@@ -79,7 +92,7 @@ export default function DepoimentosSection() {
         </div>
 
         {/* Grid de vídeos */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-7xl mx-auto">
           {testimonials.map((testimonial, index) => (
             <motion.div
               key={index}

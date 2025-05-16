@@ -3,7 +3,7 @@ import { useEffect } from "react";
 export const Seo = ({
   title = "RB Soft - Soluções em Automação Comercial",
   description = "Sistemas completos para gestão comercial, PDV inteligente e controle de estoque",
-  keywords = "automação comercial, sistema PDV, gestão de estoque, RB Soft",
+  keywords = "automação comercial, sistema PDV, gestão de estoque, RB Soft, rb soft, varejo digital, sistema de gestão",
 }) => {
   useEffect(() => {
     // Atualiza o título
