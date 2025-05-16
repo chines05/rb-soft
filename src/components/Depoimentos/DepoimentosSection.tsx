@@ -42,7 +42,7 @@ export default function DepoimentosSection() {
     },
     {
       video: Marisa,
-      name: "Marisa",
+      name: "Larissa",
       role: "Consultora - Club kids, Moda Infantil",
       quote: [
         "✔ Super facil e pratico de usar",
